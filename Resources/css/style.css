@@ -1,0 +1,140 @@
+:root {
+    --main: #c25e00;
+    --sec: #ff7b00;
+    --acc: #ffa143;
+    --dark-orange: #714400;
+    --light-orange: #ffd5b0;
+    --dark: #1a1a1a;
+    --light: #f1f1f1;
+}
+    /* font-family: "Anta", sans-serif;
+    font-family: "Roboto", sans-serif; */
+
+*{
+    font-family: "Anta", sans-serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: "Roboto", sans-serif;
+}
+body {
+    background-color: var(--light);
+}
+/* Navbar */
+.logoPresto {
+    height: 50px;
+    transition: 1.0s;
+}
+.nav-item {
+    color: var(--sec);
+    border-bottom: 2px solid transparent;
+}
+.nav-item:hover, .nav-item:focus {
+    color: var(--sec);
+    border-bottom: 2px solid #c25e00;
+}
+.navbarLink-toggler{
+    border: 2px solid #c25e00;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+}
+.stik-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--light) !important;
+    
+}
+.navbarPresto{
+    transition: 1s;
+}
+/* Header */
+h1 {
+    font-size: 50px;
+}
+
+.button-style {
+    color: var(--dark-orange);
+    background-color: var(--light-orange);
+    border: 1px solid var(--dark-orange);
+    padding: 5px 10px 5px 10px;
+    transition: 0,8s;
+    margin: 10px;
+}
+
+.button-style:hover {
+    color: var(--light-orange);
+    background-color: var(--main);
+    border: 1px solid var(--dark-orange);
+    padding: 5px 10px 5px 10px;
+}
+
+/* NUMERI */
+
+.number {
+    font-size: 50px;
+    color: var(--acc);
+    font-weight: 900;
+}
+
+/* ANNUNCI */
+.accordion-button {
+    background-color: #ffd5b0;
+    color: var(--dark-orange);
+    transition: all 1s;
+}
+.accordion-button:not(.collapsed) {
+    background-color: var(--sec);
+    color: var(--light-orange);
+}
+.accordion-body {
+    background-color: var(--acc);
+    color: #f1f1f1;
+}
+.form-check-input:checked {
+    background-color: var(--sec);
+    border-color: var(--main);
+}
+.text-category{
+    color: var(--sec);
+    padding: 0 5px 0 5px;
+    font-weight: 100;
+}
+.card-zoom {
+    transition: all 1s;
+}
+.card-zoom:hover {
+    transform: scale(1.1);
+}
+.text-price {
+    color: var(--sec);
+    font-weight: 700;
+    font-size: 15px;
+}
+.card-title {
+    color: var(--dark-orange);
+    font-weight: 800;
+    font-size: 10px;
+}
+.inputRange {
+    width: 100%;
+
+}
+.form-control {
+    background-color: var(--light-orange);
+}
+.input-group-text {
+    background-color: var(--acc);
+}
+/* Immagine */
+.about-img::before {
+    position: absolute;
+    top: 0;
+    background-color: #ff7b00;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: -20px;
+    clip-path: polygon(0 0, 39% 0, 71% 100%, 0 100%);
+}
